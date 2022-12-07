@@ -10,8 +10,8 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -o /root
+RUN go build -o /go-docker-trial
 
 EXPOSE 8080
 
-CMD [ "/root/docker-trial" ]
+CMD [ "/go-docker-trial" ]
